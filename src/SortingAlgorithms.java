@@ -35,17 +35,16 @@ public class SortingAlgorithms {
         if (before.length != after.length){
             return false;
         }
-        int sumBef = 0;
-        int sumAft = 0;
+        int sumbefore = 0;
+        int sumafter = 0;
         for (int i =0; i < before.length-1; i++){
-            sumBef = sumBef + before[i];
-            sumAft = sumAft + after[i];
+            sumbefore = sumbefore + before[i];
+            sumafter = sumafter + after[i];
         }
-        if (sumAft != sumAft){
+        if (sumafter != sumbefore){
             return false;
         } else {
             return true;
         }
     }
-}
 }
